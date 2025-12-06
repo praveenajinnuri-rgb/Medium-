@@ -1,0 +1,142 @@
+/* VERY BIG WRITING CONTAINER */
+.mini-container {
+  width: 1100px;                /* ⬅️ VERY BIG WIDTH */
+  margin: 50px auto;
+  padding: 40px;                /* More padding */
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0px 12px 40px rgba(0,0,0,0.15);
+  font-family: "Poppins", sans-serif;
+  transition: 0.25s ease;
+  min-height: 650px;            /* ⬅️ BIG HEIGHT */
+}
+
+.mini-container:hover {
+  box-shadow: 0px 16px 48px rgba(0,0,0,0.18);
+}
+
+/* HEADING */
+.head {
+  text-align:left;
+  font-size: 26px;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+/* INPUT BOX */
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* INPUTS */
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  outline: none;
+  font-size: 17px;
+  background: #fafafa;
+  transition: 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  background: #fff;
+  border-color: #1a8917;
+  box-shadow: 0 0 6px rgba(26, 137, 23, 0.35);
+}
+
+.textarea {
+  height: 150px;         /* Bigger text area */
+  resize: none;
+}
+
+/* BUTTONS */
+.add-btn,
+.update-btn {
+  width: 150px;
+  padding: 11px 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover,
+.update-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+/* PUBLISH BUTTON */
+.publish-btn {
+ width: 100px;
+padding: 9px 0;
+border: none;
+ background: #080808; 
+ color: rgb(248, 244, 244); 
+ border-radius: 9px; 
+ cursor: pointer; 
+ font-weight: 600; 
+ font-size: 14px; 
+ transition: 0.2s ease; 
+ margin-top: -9px;
+}
+
+.publish-btn:hover {
+  background: #040404;
+  transform: translateY(-2px);
+}
+
+/* LIST */
+.list {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  padding: 22px;
+  background: #f9f9f9;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+}
+
+.card h3 {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 10px 0 14px;
+}
+
+/* ICONS */
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.edit {
+  color: #000;
+}
+
+.delete {
+  color: #111;
+}

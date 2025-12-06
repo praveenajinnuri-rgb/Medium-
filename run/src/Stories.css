@@ -1,0 +1,140 @@
+/* ---------------------------------------
+   CLEAN PAGE LAYOUT (NO CLUTTER)
+---------------------------------------- */
+.stories-page {
+  display: flex;
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+
+/* ---------------------------------------
+   STORIES COLUMN
+---------------------------------------- */
+.stories-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+/* ---------------------------------------
+   CLEAN STORY CARD
+---------------------------------------- */
+.story-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  /* BOX AROUND EACH STORY */
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+
+  padding: 22px 24px;
+  background: #ffffff;
+
+  transition: 0.2s ease;
+}
+
+/* Subtle hover — not clumsy */
+.story-card:hover {
+  background: #fdfdfd;
+  border-color: #d8d8d8;
+}
+
+
+
+/* ---------------------------------------
+   AUTHOR BAR (simple & neat)
+---------------------------------------- */
+.story-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 26px;
+  color: #444;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.story-meta {
+  font-size: 13px;
+  color: #777;
+}
+
+
+/* ---------------------------------------
+   TITLE (simple, bold, no clutter)
+---------------------------------------- */
+.story-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  line-height: 1.35;
+}
+
+
+/* ---------------------------------------
+   DESCRIPTION (clean paragraph style)
+---------------------------------------- */
+.story-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.65;
+}
+
+
+/* ---------------------------------------
+   FOOTER (simple + clean)
+---------------------------------------- */
+.story-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-tag {
+  font-size: 13px;
+  color: #555;
+  background: #f2f2f2;
+  padding: 5px 12px;
+  border-radius: 16px;
+}
+
+.read-more-btn {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: #060606;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  opacity: 0.7;
+}
+
+
+/* ---------------------------------------
+   SMALL SCREENS
+---------------------------------------- */
+@media (max-width: 768px) {
+  .stories-page {
+    padding: 20px;
+  }
+
+  .story-title {
+    font-size: 20px;
+  }
+}
